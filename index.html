@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+  </head>
+
+  <body>
+    <header class="menu" id="menu">
+      <a href="#" class="logo">B S Vineeth Kumar</a>
+      <button class="icon" onclick="toggle()">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <nav class="right">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="container">
+      <div id="home">
+        <div class="slide-container">
+          <!-- first slide -->
+          <div class="slide fade">
+            <img src="assets/dice.JPG" alt="slide1" />
+            <div class="text">
+              <h3>Web Developer</h3>
+            </div>
+          </div>
+          <!-- second slide -->
+          <div class="slide fade">
+            <img src="assets/budget.JPG" alt="slide2" />
+            <div class="text">
+              <h3>Front End Developer</h3>
+            </div>
+          </div>
+          <!-- third slide -->
+          <div class="slide fade">
+            <img src="assets/budgetApp.JPG" alt="slide3" />
+            <div class="text">
+            </div>
+          </div>
+          <!-- fourth slide -->
+          <div class="slide fade">
+            <img src="assets/food-app.JPG" alt="slide4" />
+            <div class="text">
+              <h3>React JS Developer</h3>
+            </div>
+          </div>
+          <!-- slide ends -->
+
+          <!-- icons -->
+          <a href="#" class="prev" onclick="moveSlide(-1)">
+            <i class="fa fa-chevron-left"></i>
+          </a>
+          <a href="#" class="next" onclick="moveSlide(1)">
+            <i class="fa fa-chevron-right"></i>
+          </a>
+
+          <!-- dots -->
+          <div class="dot-container">
+            <span class="dot" onclick="present(1)"></span>
+            <span class="dot" onclick="present(2)"></span>
+            <span class="dot" onclick="present(3)"></span>
+            <span class="dot" onclick="present(4)"></span>
+          </div>
+        </div>
+      </div>
+
+      <div id="about">
+        <h1 class="title">About</h1>
+        <p>
+          <em
+            >Vineeth has nearly 2 years(1year 11months) of experience as a UI
+            Engineer in the IT industry, is proficient in web technologies and
+            debugging tools and passionate about working with cutting edge
+            technologies.
+          </em>
+        </p>
+
+        <div class="about-content">
+          <div class="image">
+            <img src="./assets/vineeth.JPG" alt="User1" height="300em" />
+          </div>
+          <div class="about-txt">
+            <h3>Front-End Web Developer</h3>
+            <p>
+              <b style="color: orangered">Skills:- </b>
+              <strong
+                >REACT.JS, REDUX, JAVASCRIPT, HTML5, CSS3, JSON, BOOTSTRAP,
+                MATERIAL-UI,
+              </strong>
+            </p>
+
+            <div class="about-info">
+              <ul>
+                <li><span class="label">Birthday: </span> 17 Sep 1997</li>
+                <li><span class="label">Phone: </span> 8951451851</li>
+                <li><span class="label">City: </span> Bengaluru</li>
+              </ul>
+              <ul>
+                <li><span class="label">Age: </span> 24</li>
+                <li>
+                  <span class="label">Degree: </span> BE(ELECTRONICS &
+                  COMMUNICATION ENGINEERING)
+                </li>
+                <li><span class="label">Email: </span> bsvineethkumar</li>
+                <li>
+                  <span class="label">Job Status: </span> Currently Working as
+                  Frontend web developer at Qordinal
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="portfolio">
+        <h1 class="title">Portfolio</h1>
+
+        <div class="card-container">
+          <div class="card">
+            <img src="assets/food-app.JPG" alt="card-1" />
+            <div class="card-data">
+              <h3>Project 1</h3>
+              <p>Food ordering application<br />REACT JS, HTML, CSS</p>
+              <div class="btn-group">
+                <a
+                  href="https://github.com/bsvineethkumar/food-application-app"
+                  target="_blank01"
+                >
+                  <i class="fa fa-github-square"></i> Git Source
+                </a>
+                <a href="https://meals-db7b1.web.app/" target="_blank1">
+                  <i class="fa fa-opera"></i> Live
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/budget.JPG" alt="card-1" />
+            <div class="card-data">
+              <h3>Project 2</h3>
+              <p>Budget Application<br />REACT JS, HTML, CSS</p>
+              <div class="btn-group">
+                <a
+                  href="https://github.com/bsvineethkumar/budget-application"
+                  target="_blank02"
+                >
+                  <i class="fa fa-github-square"></i> Git Source
+                </a>
+                <a
+                  href="https://budget-application-26259.web.app/"
+                  target="_blank2"
+                >
+                  <i class="fa fa-opera"></i> Live
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/redux.JPG" alt="card-1" />
+            <div class="card-data">
+              <h3>Project 3</h3>
+              <p>A simple react-redux template<br />REACT, REDUX, HTML, CSS</p>
+              <div class="btn-group">
+                <a
+                  href="https://github.com/bsvineethkumar/react-redux"
+                  target="_blank03"
+                >
+                  <i class="fa fa-github-square"></i> Git Source
+                </a>
+                <a href="https://react-redux-add63.web.app/" target="_blank3">
+                  <i class="fa fa-opera"></i> Live
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/DMP.JPG" alt="card-1" />
+            <div class="card-data">
+              <h3>Project 4</h3>
+              <p>
+                Dynamic pages<br />Technologies used : <b>REACT, HTML5, CSS3</b>
+              </p>
+              <div class="btn-group">
+                <a
+                  href="https://github.com/bsvineethkumar/dynamic-pages"
+                  target="_blank04"
+                >
+                  <i class="fa fa-github-square"></i> Git Source
+                </a>
+                <a
+                  href="https://dynamic-multi-pages.web.app/quotes"
+                  target="_blank4"
+                >
+                  <i class="fa fa-opera"></i> Live
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/dice.JPG" alt="card-1" />
+            <div class="card-data">
+              <h3>Project 5</h3>
+              <p>
+                Dice Game<br />
+                Technologies used: <b>JAVASCRIPT, <br />HTML5, CSS3</b>
+              </p>
+              <div class="btn-group">
+                <a
+                  href="https://github.com/bsvineethkumar/DiceGame"
+                  target="_blank05"
+                >
+                  <i class="fa fa-github-square"></i> Git Source
+                </a>
+                <a
+                  href="https://bsvineethkumar.github.io/DiceGame/"
+                  target="_blank5"
+                >
+                  <i class="fa fa-opera"></i> Live
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/budgetApp.JPG" alt="card-1" />
+            <div class="card-data">
+              <h3>Project 6</h3>
+              <p>
+                A simple budget application, used for <br />adding monthly
+                incomes and expenses<br />
+                Technologies used:
+                <b
+                  >JAVASCRIPT,<br />
+                  HTML5, CSS3</b
+                >
+              </p>
+              <div class="btn-group">
+                <a
+                  href="https://github.com/bsvineethkumar/BudgetApplication"
+                  target="_blank06"
+                >
+                  <i class="fa fa-github-square"></i> Git Source
+                </a>
+                <a
+                  href="https://bsvineethkumar.github.io/BudgetApplication/"
+                  target="_blank6"
+                >
+                  <i class="fa fa-opera"></i> Live
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact">
+        <h1 class="title">Contact</h1>
+        <div class="contact-container">
+          <div class="location">
+            <table>
+              <tr>
+                <th rowspan="2"><i class="fa fa-map"></i></th>
+                <th>
+                  <h3>Location</h3>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    Sri Balaji men pg, madiwala<br />
+                    Bengaluru, Karnataka, 560068.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <th rowspan="2"><i class="fa fa-envelope-o"></i></th>
+                <th>
+                  <h3>Email</h3>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="mailto:bsvineethkumar@gmail.com"
+                    >bsvineethkumar@gmail.com</a
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <th rowspan="2"><i class="fa fa-phone"></i></th>
+                <th>
+                  <h3>Mobile</h3>
+                </th>
+              </tr>
+              <tr>
+                <td><a href="tel:8951451851">8951451851</a></td>
+              </tr>
+            </table>
+          </div>
+          <div class="contact-form"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="Profolio.js"></script>
+  </body>
+</html>
